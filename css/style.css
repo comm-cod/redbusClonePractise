@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1000px;
+  min-height: 100%;
+  position: relative;
+  /* overflow-y: hidden; */
+}
+
+.nav {
+  width: 100%;
+  height: 6.25rem;
+
+  /* toook a risk here, not sure how this worked ;) */
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  background-color: white;
+}
+
+.navbar {
+  margin: auto;
+  max-width: 1200px;
+  min-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.leftBar {
+  display: flex;
+  align-items: center;
+}
+
+.redbus-logo img {
+  width: 5rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 20px;
+  background: #e0e0e0;
+  margin: 0 3.375rem 0 4rem;
+}
+
+.tickets {
+  display: flex;
+}
+.bus-tickets,
+.train-tickets {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.75rem;
+  padding: 1em 0.625rem;
+}
+
+.bus-tickets img {
+  width: 5.25rem;
+  height: 1.25rem;
+  margin-bottom: 0.5rem;
+  filter: grayscale(1) brightness(0);
+}
+
+.train-tickets img {
+  width: 5.25rem;
+  height: 1.25rem;
+  margin-bottom: 0.5rem;
+  filter: grayscale(1) brightness(0);
+}
+
+.bus-tickets {
+  background-color: #d74e55;
+  color: white;
+  border-radius: 10px;
+}
+
+.rightBar {
+  display: flex;
+  align-items: center;
+}
+
+.help {
+  margin-right: 50px;
+}
+
+.help i,
+.account i {
+  margin-right: 5px;
+}
+
+/* NAVBAR END */
+
+.container {
+  position: relative; /*thers some doubt*/
+  height: 32.5rem;
+  margin-top: 6.25rem;
+}
+
+.image {
+  height: 32.5rem;
+  background: url(https://st.redbus.in/Images/HomeIndia/HeroImageV2_C.png);
+  background-size: cover;
+}
+
+.container h1 {
+  color: white;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  top: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.search-Container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  border-radius: 32px;
+  width: 100%;
+  top: 226px;
+}
+
+.search-Bar {
+  display: flex;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 12px, rgba(0, 0, 0, 0.05) 0px 0px 0px;
+  border-radius: 32px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+}
+
+.from {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 112px;
+  gap: 13px;
+  border-radius: 32px 0px 0px 32px;
+  background-color: rgb(255, 255, 255);
+}
+
+.reverse {
+  width: 40px;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  left: 250px;
+  top: 36px;
+  color: rgb(107, 107, 107);
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.to {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 112px;
+  gap: 13px;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgb(224, 224, 224);
+}
+
+.date {
+  width: 210px;
+  background-color: rgb(255, 255, 255);
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  border-left: 1px solid rgb(224, 224, 224);
+}
+
+.search-btn {
+  width: 243px;
+  padding: 40px;
+  gap: 12px;
+  background: rgb(216, 78, 85);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+  border-radius: 0px 32px 32px 0px;
+}
+
+.offer {
+  display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -246px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 18.75rem;
+
+}
+
+.offerSection {
+  width: 1200px;
+    padding: 2rem;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 25px;
+    border-radius: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.offerHeading{
+  display: flex;
+  flex-direction: column;
+  
+}
